@@ -1,0 +1,1 @@
+mongoexport --db HappySad --collection love --type=json --fields text --out report.json

@@ -1,0 +1,5 @@
+db.happy.find({},{"_id":0,"text":1,"id":1})
+
+mongoexport -d HappySad -c Happy --csv --query { $project:{"_id":0,"text":1,"id":1} }
+
+mongo -d HappySad -c Happy --csv --eval "db.happy.find({},{"_id":0,"text":1,})"
